@@ -7,16 +7,6 @@ const VoterSchema = new mongoose.Schema({
   zip: { type: Number },
   interests: [{ type: String }],
   likes: [{ type: mongoose.Schema.Types.ObjectId, ref: "Bill" }],
-  dislikes: [{ type: mongoose.Schema.Types.ObjectId, ref: "Bill" }]
-});
-
-const VoterSchema = new mongoose.Schema({
-  firstName: { type: String },
-  lastName: { type: String },
-  address: { type: String },
-  zip: { type: Number },
-  interests: [{ type: String }],
-  likes: [{ type: mongoose.Schema.Types.ObjectId, ref: "Bill" }],
   dislikes: [{ type: mongoose.Schema.Types.ObjectId, ref: "Bill" }],
   representatives: [{ type: mongoose.Schema.Types.ObjectId, ref: "Bill" }]
 });
